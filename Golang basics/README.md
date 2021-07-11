@@ -1,5 +1,8 @@
 # Basics for Golang 
 
+# Table of contents
+1. [Pointers](#Pointers)
+
 
 ### Pointers
 Why use pointer?
