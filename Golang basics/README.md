@@ -63,4 +63,6 @@ func squarePointer(x *int) {
 ```
 
 ![alt text](./assets/pointers1.PNG "functions and pointers")
-\  
+
+
+Heaps
