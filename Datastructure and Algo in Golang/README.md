@@ -3,12 +3,13 @@
 ### Table of Contents
 
 1. [Graphs](#Graphs)
+   1. [Graph Data Structure](#gds)
    1. [Tree/Graph Traversal Algorithms](#traversal)
-   1. [BFS](#bfs)
+      1. [BFS](#bfs)
 
 ## Graphs
 
-- Representing Graphs :
+- Representing Graphs : <a name="gds"></a>
 
   - Adjacency List
 
