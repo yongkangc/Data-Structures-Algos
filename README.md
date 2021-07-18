@@ -32,14 +32,14 @@
       - Adjancy matrix is faster for Edge lookup O(1) vs O(V)
         Time Complexity
 
-        ![alt text](../assets/lmc.PNG "functions and pointers")
+        ![alt text](./assets/lmc.PNG "functions and pointers")
 
 ### Tree/Graph Traversal Algorithms <a name="traversal"></a>
 
 - Breadth-first search is guaranteed to find a shortest possible path between two vertices in a graph. Depth-first search is not (and usually does not).
 - DFS is preferred if we want to visit every node in the graph.
 - DFS : Stack ; BFS : Queue
-  ![alt text](../assets/dfsbfsio.PNG "functions and pointers")
+  ![alt text](./assets/dfsbfsio.PNG "functions and pointers")
 
 #### [Binary Tree Traversal](././Datastructure%20and%20Algo%20in%20Golang/tree_traversal.go) <a name="btt"></a>
 
