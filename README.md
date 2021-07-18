@@ -63,8 +63,13 @@
       1. Right
       1. Current
 
-#### Depth-First Traversal <a name="dfs"></a>
+#### [Depth-First Traversal](./Datastructure%20and%20Algo%20in%20Golang/graph_search.go) <a name="dfs"></a>
 
-- DFS implements the order traversal just that it has 'visited' mark
+- DFS is a recursive algorithm that visits every node in a graph, starting from the source node and proceeding along the edges of the graph.
+- DFS implements the order traversal just that it has 'visited' mark, so that it does not repeat the visiting.
 
-#### Breadth-First Traversal <a name="bfs"></a>
+#### [Breadth-First Traversal](<(./Datastructure%20and%20Algo%20in%20Golang/graph_search.go)>) <a name="bfs"></a>
+
+- Breath First Search is a traversal algorithm that visits every the node's neighbors in a graph before visiting any of its neighbor's neighbours.
+- BFS is a iterative algorithm that uses a queue to store the nodes that need to be visited.
+- [Ref video](https://www.youtube.com/watch?v=QRq6p9s8NVg&ab_channel=GoGATEIIT)
