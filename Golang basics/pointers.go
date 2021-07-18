@@ -22,3 +22,10 @@ func squarePointer(x *int) {
 	*x *= *x
 	fmt.Println(x, *x)
 }
+
+// Note on Pointer
+// Pointers reference a location in memory where a value is stored rather than the value itself.
+//  (They point to something else)
+// By using a pointer (*int) the zero function is able to modify the original variable.
+
+// `&` goes in front of a variable when you want to get that variable's memory address.

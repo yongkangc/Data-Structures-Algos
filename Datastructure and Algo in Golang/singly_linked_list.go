@@ -20,12 +20,13 @@ func (l *LinkedList) AddToEnd(data interface{}) {
 		data: data,
 	}
 
-	if l.tail == nil {
-		l.tail = node
-	} else {
-		l.tail.next = node
-		l.tail = node
+	nodeEnd := l.head
+	for nodeEnd.next != nil {
+		nodeEnd = nodeEnd.next
 	}
+	nodeEnd.next = node
+	fmt.Println(nodeEnd.next.data)
+
 	l.length++
 }
 
@@ -50,8 +51,7 @@ func (l *LinkedList) Len() int {
 }
 
 func (l *LinkedList) Display() {
-	var node *Node
-	for node = l.head; node != nil; node = node.next {
+	for node := l.head; node != nil; node = node.next {
 		fmt.Printf("%v -> ", node.data)
 
 	}
@@ -67,8 +67,7 @@ func main() {
 
 	linkedList.AddToHead(1)
 	linkedList.AddToHead(3)
-	linkedList.AddToEnd(5)
+	linkedList.AddToEnd(10)
 
 	linkedList.Display()
-
 }

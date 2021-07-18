@@ -1,20 +1,23 @@
-# Basics for Golang 
+# Basics for Golang
 
 ## Table of contents
+
 1. [Pointers](#Pointers)
 
-
 ### Pointers
+
 Why use pointer?
+
 - efficent to store variables in one place and access it in one place rather than cloning it
 - changing variable in function (ensuring immutability)
 
 pointer points to a address in memory.
 
-ACcessing memory address : `&varaible`
+Accessing memory address : `&variable`
+
 ```
 i, j := 42, 120
-fmt.Println(&i, &j) 
+fmt.Println(&i, &j)
 
 >> 0xc000014098 0xc0000140b0
 ```
@@ -22,6 +25,7 @@ fmt.Println(&i, &j)
 pointer type : `*datatype` e.g int
 
 pointer variable : `*variable` i.e value at that address
+
 ```
 	i, j := 42, 120
 	p := &i
@@ -32,6 +36,7 @@ pointer variable : `*variable` i.e value at that address
 ```
 
 Example of Using pointers in functions
+
 ```
 package main
 
@@ -63,6 +68,5 @@ func squarePointer(x *int) {
 ```
 
 ![alt text](./assets/pointers1.PNG "functions and pointers")
-
 
 Heaps
