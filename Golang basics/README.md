@@ -67,6 +67,6 @@ func squarePointer(x *int) {
 >> 0xc0000ac058 16
 ```
 
-![alt text](./assets/pointers1.PNG "functions and pointers")
+![alt text](../assets/pointers1.PNG "functions and pointers")
 
 Heaps

@@ -14,7 +14,7 @@
 
     - Every Vertex stores a list of adjacent vertices.
     - Each index of a list could be used to represent the vertex and the elements represent adjacent vertices.
-      ![alt text](../Golang basics/assets/adjacency_list.PNG "functions and pointers")
+      ![alt text](../assets/adjacency_list.PNG "functions and pointers")
 
   - Adjacency Matrix
 
