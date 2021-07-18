@@ -11,14 +11,14 @@
 
 - Representing Graphs : <a name="gds"></a>
 
-  - [Adjacency List]("./Datastructure and Algo in Golang/adjacency_list.go")
+  - [Adjacency List](./Datastructure%20and%20Algo%20in%20Golang/adjacency_list.go)
 
     - Every Vertex stores a list of adjacent vertices.
     - Each index of a list could be used to represent the vertex and the elements represent adjacent vertices.
 
       ![alt text](./assets/adjacency_list.PNG "functions and pointers")
 
-  - [Adjacency Matrix](./adjacency_matrix.go)
+  - [Adjacency Matrix](././Datastructure%20and%20Algo%20in%20Golang/adjacency_matrix.go)
 
     - Representing graphs as 2 dimensional matrix.
       - Edge is represented by the value of i,j in matrix.
@@ -41,7 +41,7 @@
 - DFS : Stack ; BFS : Queue
   ![alt text](../assets/dfsbfsio.PNG "functions and pointers")
 
-#### [Binary Tree Traversal](./tree_traversal.go) <a name="btt"></a>
+#### [Binary Tree Traversal](././Datastructure%20and%20Algo%20in%20Golang/tree_traversal.go) <a name="btt"></a>
 
 #### In order
 
