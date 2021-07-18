@@ -11,7 +11,7 @@
 
 - Representing Graphs : <a name="gds"></a>
 
-  - [Adjacency List](./Datastructure and Algo in Golang/adjacency_list.go)
+  - [Adjacency List]("./Datastructure and Algo in Golang/adjacency_list.go")
 
     - Every Vertex stores a list of adjacent vertices.
     - Each index of a list could be used to represent the vertex and the elements represent adjacent vertices.
