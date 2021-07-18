@@ -4,6 +4,7 @@
 
 1. [Graphs](#Graphs)
    1. [Tree/Graph Traversal Algorithms](#traversal)
+   1. [BFS](#bfs)
 
 ## Graphs
 
@@ -12,11 +13,8 @@
   - Adjacency List
 
     - Every Vertex stores a list of adjacent vertices.
-    - Each index of a list could be used to represent the vertex and the elements represent adjacent vertices
-
-    ```
-    test
-    ```
+    - Each index of a list could be used to represent the vertex and the elements represent adjacent vertices.
+      ![alt text](../Golang basics/assets/pointers1.PNG "functions and pointers")
 
   - Adjacency Matrix
 
@@ -25,4 +23,4 @@
 - Breadth-first search is guaranteed to find a shortest possible path between two vertices in a graph. Depth-first search is not (and usually does not).
 - DFS is preferred if we want to visit every node in the graph.
 
-#### Breadth-First Traversal
+#### Breadth-First Traversal <a name="bfs"></a>
