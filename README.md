@@ -18,7 +18,7 @@
 
       ![alt text](./assets/adjacency_list.PNG "functions and pointers")
 
-  - [Adjacency Matrix](././Datastructure%20and%20Algo%20in%20Golang/adjacency_matrix.go)
+  - [Adjacency Matrix](./Datastructure%20and%20Algo%20in%20Golang/adjacency_matrix.go)
 
     - Representing graphs as 2 dimensional matrix.
       - Edge is represented by the value of i,j in matrix.
@@ -39,27 +39,27 @@
 - Breadth-first search is guaranteed to find a shortest possible path between two vertices in a graph. Depth-first search is not (and usually does not).
 - DFS is preferred if we want to visit every node in the graph.
 - DFS : Stack ; BFS : Queue
-  ![alt text](./assets/dfsbfsio.PNG "functions and pointers")
+  ![alt text](./assets/bfsdfsio.PNG "functions and pointers")
 
-#### [Binary Tree Traversal](././Datastructure%20and%20Algo%20in%20Golang/tree_traversal.go) <a name="btt"></a>
+#### [Binary Tree Traversal](./Datastructure%20and%20Algo%20in%20Golang/tree_traversal.go) <a name="btt"></a>
 
-#### In order
+**In order**
 
-1. Visit Left Node
-1. Current Node
-1. Right Node
+      1. Visit Left Node
+      1. Current Node
+      1. Right Node
 
-#### Pre Order
+**Pre Order**
 
-1. Visit Current Node
-1. Visit Left Node
-1. Visit Right Node
+      1. Visit Current Node
+      1. Visit Left Node
+      1. Visit Right Node
 
-#### Post Order
+**Post Order**
 
-1. Visit Left
-1. Right
-1. Current
+      1. Visit Left
+      1. Right
+      1. Current
 
 #### Depth-First Traversal <a name="dfs"></a>
 

@@ -15,7 +15,7 @@ pointer points to a address in memory.
 
 Accessing memory address : `&variable`
 
-```
+```golang
 i, j := 42, 120
 fmt.Println(&i, &j)
 
@@ -26,7 +26,7 @@ pointer type : `*datatype` e.g int
 
 pointer variable : `*variable` i.e value at that address
 
-```
+```golang
 	i, j := 42, 120
 	p := &i
 	fmt.Println(p)
@@ -37,7 +37,7 @@ pointer variable : `*variable` i.e value at that address
 
 Example of Using pointers in functions
 
-```
+```golang
 package main
 
 import "fmt"
