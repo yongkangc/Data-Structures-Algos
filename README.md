@@ -16,15 +16,32 @@
 
 ## Trees
 
-Types of trees: <a name="tts"></a>
+**Types of trees:** <a name="tts"></a>
 
-- Search
+- Binary Search Tree (most interview questions are asking about binary search trees)
+  - for each node, its left child is less than the node, which is less than its right child.
 - Balanced
+  - Balanced means the difference between the heights of the left and right subtrees is no more than 1.
+  - This ensures O(log n) time for both search and insert.
 - Complete
+  - A complete binary tree is a binary tree in which every level, except possibly the last, is completely filled, and all nodes are as far left as possible.
 - Full
+  - A full binary tree is a binary tree in which every node has either 0 or 2 children.
 - Perfect
+  - Full & Complete
 - Binary Heaps (Min/Max)
+  - Complete Binary Search Tree where each node is smaller than its childs.
+  - the root is the minimum
 - Tries(Prefix Trees)
+
+#### Heap Operations
+
+|                  | Extract Min                                                                                   | Insert                                                                                                                         |
+| ---------------- | --------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| Approach         | 1. Swap the last element with the minimum element 2. Bubble the element down the last element | 1. Element is inserted at the bottom 2. We swap the new element with its parents (bubble) up until we find an appropriate spot |
+| Code             |                                                                                               |                                                                                                                                |
+| Time Complexity  | O(Log N)                                                                                      | O(Log N)                                                                                                                       |
+| Space Complexity |                                                                                               |                                                                                                                                |
 
 ## Graphs
 
