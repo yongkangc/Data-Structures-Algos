@@ -3,11 +3,28 @@
 # Table of Contents
 
 1. [Graphs](#Graphs)
+
+   1. [Types of trees:](#tts)
+   1. [Tree/Graph Traversal Algorithms](#traversal)
+
+1. [Graphs](#Graphs)
    1. [Graph Data Structure](#gds)
    1. [Tree/Graph Traversal Algorithms](#traversal)
       1. [Binary Tree Traversal](#btt)
       1. [Depth First Search](#dfs)
       1. [BFS](#bfs)
+
+## Trees
+
+Types of trees: <a name="tts"></a>
+
+- Search
+- Balanced
+- Complete
+- Full
+- Perfect
+- Binary Heaps (Min/Max)
+- Tries(Prefix Trees)
 
 ## Graphs
 
