@@ -6,6 +6,7 @@
 
    1. [Types of trees:](#tts)
    1. [Tree/Graph Traversal Algorithms](#traversal)
+   1. [Heap](#heap)]
 
 1. [Graphs](#Graphs)
    1. [Graph Data Structure](#gds)
@@ -34,7 +35,7 @@
   - the root is the minimum
 - Tries(Prefix Trees)
 
-#### Heap Operations
+#### Heap
 
 |                  | Extract Min                                                                                   | Insert                                                                                                                         |
 | ---------------- | --------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
