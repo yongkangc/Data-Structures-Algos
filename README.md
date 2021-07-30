@@ -117,4 +117,4 @@
 ```
 [Ref video](https://www.youtube.com/watch?v=QRq6p9s8NVg&ab_channel=GoGATEIIT)
 #### DFS VS BFS
-  ![alt text](./assets/3graph1.PNG "functions and pointers")
+  ![alt text](./assets/3graph1.png "functions and pointers")
