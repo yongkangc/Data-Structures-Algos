@@ -14,6 +14,7 @@
       1. [Binary Tree Traversal](#btt)
       1. [Depth First Search](#dfs)
       1. [BFS](#bfs)
+      1. [Topological Sort](#topological-sort)
 
 ## Trees
 
@@ -118,3 +119,30 @@
 [Ref video](https://www.youtube.com/watch?v=QRq6p9s8NVg&ab_channel=GoGATEIIT)
 #### DFS VS BFS
   ![alt text](./assets/3graph1.png "functions and pointers")
+
+### Topological Sort
+Topological Sort is a linear ordering of vertices such that for every directed edge uv from vertex u to vertex v, u comes before v in the ordering.
+
+  ![alt text](./assets/topological_sort.png "topological sort")
+
+Degree of a vertex is the number of edges connected to it.
+
+| In degree :                                                                                               | Out degree :                                                |
+|-----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
+|In degree is the number of edges coming into a vertex. In degree is 0 if the vertex is a leaf node. |Out degree is the number of edges going out of a vertex. |
+
+Applications
+- Task Scheduling
+- Build Systems
+- Course Scheduling
+
+Algorithm:
+```
+1. Create a set of all vertices with no incoming edges
+2. While there are vertices in the set
+    1. Pick a vertex u
+    2. Remove u from the set
+    3. For each vertex v such that there is an edge from u to v
+        1. Remove edge uv from graph
+        2. Add v to the set
+```
