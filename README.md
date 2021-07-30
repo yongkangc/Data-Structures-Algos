@@ -106,6 +106,15 @@
 
 #### [Breadth-First Traversal](<(./Datastructure%20and%20Algo%20in%20Golang/graph_search.go)>) <a name="bfs"></a>
 
-- Breath First Search is a traversal algorithm that visits every the node's neighbors in a graph before visiting any of its neighbor's neighbours.
 - BFS is a iterative algorithm that uses a queue to store the nodes that need to be visited.
-- [Ref video](https://www.youtube.com/watch?v=QRq6p9s8NVg&ab_channel=GoGATEIIT)
+
+**Algorithm:**
+```
+1. Enqueue the source node 
+2. while the queue is not empty, dequeue a node
+3. Visit the node if not visited
+4. Enqueue the children of the node
+```
+[Ref video](https://www.youtube.com/watch?v=QRq6p9s8NVg&ab_channel=GoGATEIIT)
+#### DFS VS BFS
+  ![alt text](./assets/3graph1.PNG "functions and pointers")
