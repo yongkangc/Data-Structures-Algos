@@ -33,14 +33,46 @@ func (t *Trie) Insert(s string) {
 		}
 		currentNode = currentNode.children[letter]
 	}
+	currentNode.isEnd = true
 }
 
 // Search will take in a word and Return true if the word is in the trie
 func (t *Trie) Search(s string) bool {
+	wordLength := len(s)
+	currentNode := t.root
+	for i := 0; i < wordLength; i++ {
+		letter := s[i] - 'a' // this changes the base number for letters to start from 0
+		// if the letter is not in the index of children then add it
+		if currentNode.children[letter] == nil {
+			return false
+		}
+	}
+	if currentNode.isEnd == true {
 
+		return true
+	}
+}
 
 func main() {
 	testTrie := InitTrie()
 	fmt.Println(testTrie.root)
+
+	toAdd := []string{
+		"a",
+		"ab",
+		"abc",
+		"abcd",
+		"abcde",
+		"abcdef",
+		"abcdefg",
+		"abcdefgh"
+	}
+	for _, s := range toAdd {
+		testTrie.Insert(s)
+	}
+	//search
+	fmt.Println(testTrie.Search("abcdefgh"))
+	// search negative
+	fmt.Println(testTrie.Search("abcdefghi"))
 
 }

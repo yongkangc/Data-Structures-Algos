@@ -2,7 +2,7 @@
 
 # Table of Contents
 
-1. [Graphs](#Graphs)
+1. [Trees](#Trees)
 
    1. [Types of trees:](#tts)
    1. [Tree/Graph Traversal Algorithms](#traversal)
