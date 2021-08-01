@@ -6,7 +6,8 @@
 
    1. [Types of trees:](#tts)
    1. [Tree/Graph Traversal Algorithms](#traversal)
-   1. [Heap](#heap)]
+   1. [Heap](#heap)
+   1. [Trie](#trie)
 
 1. [Graphs](#Graphs)
    1. [Graph Data Structure](#gds)
@@ -36,14 +37,39 @@
   - the root is the minimum
 - Tries(Prefix Trees)
 
-#### Heap
+### Heap
 
-|                  | Extract Min                                                                                   | Insert                                                                                                                         |
-| ---------------- | --------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| Approach         | 1. Swap the last element with the minimum element 2. Bubble the element down the last element | 1. Element is inserted at the bottom 2. We swap the new element with its parents (bubble) up until we find an appropriate spot |
-| Code             |                                                                                               |                                                                                                                                |
-| Time Complexity  | O(Log N)                                                                                      | O(Log N)                                                                                                                       |
-| Space Complexity |                                                                                               |                                                                                                                                |
+![alt text](./assets/heap.png "Heap")
+
+### [Trie](./Datastructure%20and%20Algo%20in%20Golang/trie.go)
+
+- A trie is a kind of tree data structure that is used to store a dynamic set of strings.
+- A trie is a tree where each node represents a prefix (or partial key).
+- Booleans are used to indicate if a prefix is a complete key or not.
+  ![alt text](./assets/trie.PNG "Trie")
+
+Key Functions:
+
+- `insert`: Inserts a new key into the trie.
+
+```
+1. For each character in the word, create a new node as a child of the current node if it does not already exist.
+2. Mark the current node as complete if it is a prefix of the word.
+```
+
+- `search`: Searches for a key in the trie.
+
+Time Complexity:
+
+- `insert`: O(lg n)
+- `search`: O(m) where m is the length of the key.
+- Tradoff?
+
+Use case:
+
+- many problems involving lists of words leverage trie as optimisation
+- Storing a dictionary of words for quick lockup
+- autocomplete
 
 ## Graphs
 
@@ -110,33 +136,40 @@
 - BFS is a iterative algorithm that uses a queue to store the nodes that need to be visited.
 
 **Algorithm:**
+
 ```
-1. Enqueue the source node 
+1. Enqueue the source node
 2. while the queue is not empty, dequeue a node
 3. Visit the node if not visited
 4. Enqueue the children of the node
 ```
+
 [Ref video](https://www.youtube.com/watch?v=QRq6p9s8NVg&ab_channel=GoGATEIIT)
+
 #### DFS VS BFS
-  ![alt text](./assets/3graph1.png "functions and pointers")
+
+![alt text](./assets/3graph1.png "functions and pointers")
 
 ### Topological Sort
+
 Topological Sort is a linear ordering of vertices such that for every directed edge uv from vertex u to vertex v, u comes before v in the ordering.
 
-  ![alt text](./assets/topological_sort.png "topological sort")
+![alt text](./assets/topological_sort.png "topological sort")
 
 Degree of a vertex is the number of edges connected to it.
 
-| In degree :                                                                                               | Out degree :                                                |
-|-----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
-|In degree is the number of edges coming into a vertex. In degree is 0 if the vertex is a leaf node. |Out degree is the number of edges going out of a vertex. |
+| In degree :                                                                                         | Out degree :                                             |
+| --------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
+| In degree is the number of edges coming into a vertex. In degree is 0 if the vertex is a leaf node. | Out degree is the number of edges going out of a vertex. |
 
 Applications
+
 - Task Scheduling
 - Build Systems
 - Course Scheduling
 
 Algorithm:
+
 ```
 1. Create a set of all vertices with no incoming edges
 2. While there are vertices in the set
