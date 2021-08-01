@@ -41,7 +41,7 @@
 |                  | Extract Min                                                                                   | Insert                                                                                                                         |
 | ---------------- | --------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
 | Approach         | 1. Swap the last element with the minimum element 2. Bubble the element down the last element | 1. Element is inserted at the bottom 2. We swap the new element with its parents (bubble) up until we find an appropriate spot |
-| Code             |                                                                                               |                                                                                                                                |
+                                                                                                                                
 | Time Complexity  | O(Log N)                                                                                      | O(Log N)                                                                                                                       |
 | Space Complexity |                                                                                               |                                                                                                                                |
 
