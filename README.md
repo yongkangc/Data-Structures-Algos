@@ -26,7 +26,7 @@
 - The downside is that they don’t allow constant time access: to find the ith element, you need to traverse i elements, whereas arrays can do this in constant time. .
 - Use them where insertion speed is important, but not when you want to access elements based on their index.
 
-<img src="https://github.com/ExtremelySunnyYK/Go-Lang-Data-Structores-Algos/blob/master/assets/linkedlist.jpg" width="250" height="250" alt="some_text">
+<img src="https://github.com/ExtremelySunnyYK/Go-Lang-Data-Structores-Algos/blob/master/assets/linkedlist.jpg" width="500" height="300" alt="some_text">
 
 
 
