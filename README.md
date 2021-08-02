@@ -2,6 +2,8 @@
 
 # Table of Contents
 
+1. [LinkedList](#LinkedList)
+
 1. [Trees](#Trees)
 
    1. [Types of trees:](#tts)
@@ -16,6 +18,16 @@
       1. [Depth First Search](#dfs)
       1. [BFS](#bfs)
       1. [Topological Sort](#topological-sort)
+
+## LinkedList
+- Linked lists are great for problems that require arbitrary insertion. 
+- Dynamic arrays allow inserting at arbitrary locations, but they require you to move all elements after your insertion point. 
+- Doubly LinkedLists don’t have this problem: you can insert or delete elements in a linked list in constant time, as long as you know where the element is. 
+- The downside is that they don’t allow constant time access: to find the ith element, you need to traverse i elements, whereas arrays can do this in constant time. .
+- Use them where insertion speed is important, but not when you want to access elements based on their index.
+
+![alt text](./assets/linkedlist.jpg "Heap")
+
 
 ## Trees
 
@@ -36,6 +48,12 @@
   - Complete Binary Search Tree where each node is smaller than its childs.
   - the root is the minimum
 - Tries(Prefix Trees)
+
+### Binary Search Tree
+Binary search trees are useful, because they allow you to find elements in O(log n) time, but unlike a sorted array, you can do insertions at an average of O(log n) time, as opposed to O(n) potentially. 
+![alt text](./assets/bst.png "bst")
+
+
 
 ### Heap
 
