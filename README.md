@@ -21,15 +21,14 @@
       1. [Topological Sort](#topological-sort)
 
 ## LinkedList
-- Linked lists are great for problems that require arbitrary insertion. 
-- Dynamic arrays allow inserting at arbitrary locations, but they require you to move all elements after your insertion point. 
-- Doubly LinkedLists don’t have this problem: you can insert or delete elements in a linked list in constant time, as long as you know where the element is. 
+
+- Linked lists are great for problems that require arbitrary insertion.
+- Dynamic arrays allow inserting at arbitrary locations, but they require you to move all elements after your insertion point.
+- Doubly LinkedLists don’t have this problem: you can insert or delete elements in a linked list in constant time, as long as you know where the element is.
 - The downside is that they don’t allow constant time access: to find the ith element, you need to traverse i elements, whereas arrays can do this in constant time. .
 - Use them where insertion speed is important, but not when you want to access elements based on their index.
 
 <img src="https://github.com/ExtremelySunnyYK/Go-Lang-Data-Structores-Algos/blob/master/assets/linkedlist.jpg" width="500" height="300" alt="some_text">
-
-
 
 ## Trees
 
@@ -52,26 +51,31 @@
 - Tries(Prefix Trees)
 
 ### Binary Search Tree
-Binary search trees are useful, because they allow you to find elements in O(log n) time, but unlike a sorted array, you can do insertions at an average of O(log n) time, as opposed to O(n) potentially. 
+
+Binary search trees are useful, because they allow you to find elements in O(log n) time, but unlike a sorted array, you can do insertions at an average of O(log n) time, as opposed to O(n) potentially.
 ![alt text](./assets/bst.png "bst")
-
-
 
 ### Heap
 
 ![alt text](./assets/heap.png "Heap")
 
 ### Priority Queue
+
 Priority queue is an abstract data type (an interface definition) that defines three operations: `is_empty, insert_with_priority, and pull_highest_priority_element`. The definition says what those functions are expected to do, but it doesn't say how it is to be implemented.
 
 A binary heap is one way to implement a priority queue. Its advantages are ease of implementation and that it is reasonably efficient.
-
 
 ### [Trie](./Datastructure%20and%20Algo%20in%20Golang/trie.go)
 
 - A trie is a kind of tree data structure that is used to store a dynamic set of strings.
 - A trie is a tree where each node represents a prefix (or partial key).
 - Booleans are used to indicate if a prefix is a complete key or not.
+
+**Advantages of using Trie:**
+
+- It can tell us if a string is a prefix of any valid words and a tree can do it in O(K) time where K is the length of the string.
+- Many problems involving list of words can be solved using a trie. In situations when we search through the tree on related prefixes repeatedly (e.g looking up M, then MA,MAN,MANY) we might pass a reference to the current node in the tree
+
   ![alt text](./assets/trie.PNG "Trie")
 
 Key Functions:
