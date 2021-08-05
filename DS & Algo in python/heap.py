@@ -6,3 +6,11 @@ from collections import Counter
 # list -> counter -> heap
 count = Counter(nums)
 heapq.nlargest(k, count.keys(), key=count.get)
+
+
+
+def buildheap(nums):
+    heap = []
+    for i in nums:
+        heapq.heappush(heap, i)
+    return heap

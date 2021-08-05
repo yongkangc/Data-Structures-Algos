@@ -9,6 +9,7 @@
    1. [Types of trees:](#tts)
    1. [Tree/Graph Traversal Algorithms](#traversal)
    1. [Heap](#heap)
+   1. [Priorty Queue](#priority-queue)
    1. [Trie](#trie)
 
 1. [Graphs](#Graphs)
@@ -59,6 +60,12 @@ Binary search trees are useful, because they allow you to find elements in O(log
 ### Heap
 
 ![alt text](./assets/heap.png "Heap")
+
+### Priority Queue
+Priority queue is an abstract data type (an interface definition) that defines three operations: `is_empty, insert_with_priority, and pull_highest_priority_element`. The definition says what those functions are expected to do, but it doesn't say how it is to be implemented.
+
+A binary heap is one way to implement a priority queue. Its advantages are ease of implementation and that it is reasonably efficient.
+
 
 ### [Trie](./Datastructure%20and%20Algo%20in%20Golang/trie.go)
 
