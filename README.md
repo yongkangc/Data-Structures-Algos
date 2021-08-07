@@ -22,7 +22,7 @@
 1. [Algorithms](#Algorithms)
    1. [Sorting](#sorting)
    1. [Searching](#searching)
-      1. [Binary Search](./DS%20&%20Algo%20in%20python/binary_search.md)
+      1. [Binary Search](./DS%20%26%20Algo%20in%20python/binarysearch.md)
 
 ## LinkedList
 
