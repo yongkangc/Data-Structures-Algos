@@ -2,15 +2,17 @@
 
 This particular problem and most of others can be approached using the following sequence:
 
-1.[Find recursive relation](#find-recursive-relation)
+## Table of Content
 
-1.[Recursive (top-down) approach](#recursive-top-down-approach)
+1. [Find recursive relation](#find-recursive-relation)
 
-1.[Recursive + memo (top-down) approach](#recursive-memo-top-down-approach)
+1. [Recursive (top-down) approach](#recursive-top-down-approach)
 
-1.[Iterative + memo (bottom-up)](#iterative-memo-bottom-up)
+1. [Recursive + memo (top-down) approach](#recursive-memo-top-down-approach)
 
-1.[Iterative + N variables (bottom-up)](#iterative-n-variables-bottom-up)
+1. [Iterative + memo (bottom-up)](#iterative-memo-bottom-up)
+
+1. [Iterative + N variables (bottom-up)](#iterative-n-variables-bottom-up)
 
 ## 1. Find recursive relation
 
