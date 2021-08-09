@@ -1,4 +1,4 @@
-# Approach + Solution to house robber1
+# Approach + Solution to house robber
 
 This particular problem and most of others can be approached using the following sequence:
 
