@@ -132,7 +132,7 @@ class Solution:
             max_2_house_before = max_1_house_before
             max_1_house_before = temp
 
-        return rob2
+        return max_1_house_before
 ```
 
 ![alt text](../assets/rr_memo.png "memo Relation")
