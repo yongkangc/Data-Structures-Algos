@@ -52,17 +52,27 @@ class Solution:
 
 class Solution:
     def canJump(self, nums: List[int]) -> bool:
-        dp = [False]*len(nums)
-        dp[-1] = True
-        for i in range(len(nums)-2,-1,-1):
-            n = nums[i]
-            if n==0:
-                dp[i]=False
-                continue
-            for j in range(n, 0,-1): # [n,1] inclusive
-                if i+j<len(dp) and dp[i+j]==True:
+                
+        # empty nums or len(1) but element is not zero, return fale
+        if not nums:
+            return False
+        if len(nums) == 1 and nums[0] >=0:
+            return True
+    
+        N = len(nums)
+        dp = [False] * N
+        
+        for i in range(N - 2,-1,-1): #iterate in reverse order starting from second last index             
+            # at each index, we want to calculate the max possible jump
+            jumpTo = i + nums[i]
+            
+            if jumpTo >= N-1: 
+                dp[i] = True     
+                
+            for j in range(i,jumpTo + 1): # we iterate through the jump and see if we can hit any true in the range
+                if dp[j] == True:
                     dp[i] = True
                     break
-        # print(dp)
+
         return dp[0]
 ```
