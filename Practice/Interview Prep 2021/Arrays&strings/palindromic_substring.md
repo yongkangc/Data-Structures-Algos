@@ -8,8 +8,8 @@
 - however with that you only get the odd case. for the even case, you need to start with the left and right index not being equal.
 
 Approach in drawings:
-![alt text](../assets/palindromic_substring_1.png "Recursive Relation")
-![alt text](../assets/palindromic_substring_2.png "Recursive Relation")
+![alt text](../assets/palindromic_sub_1.png "Recursive Relation")
+![alt text](../assets/palindromic_sub_2.png "Recursive Relation")
 
 ### Recursive
 
