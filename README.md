@@ -82,6 +82,8 @@ Binary search trees are useful, because they allow you to find elements in O(log
 
 ![alt text](./assets/heap.png "Heap")
 
+- for max heap or min heap, the parent is always greater/less than or equal to the children.
+
 #### Implementation
 
 Array implementation
