@@ -1,6 +1,7 @@
 # My notes on DS and Algo
 
 # Table of Contents
+
 1. [Arrays](#arrays)
 1. [LinkedList](#LinkedList)
 
@@ -20,24 +21,27 @@
       1. [BFS](#bfs)
       1. [Topological Sort](#topological-sort)
 1. [Algorithms](#Algorithms)
-   1. [Others](#others) 
+   1. [Others](#others)
    1. [Sorting](#sorting)
    1. [Searching](#searching)
       1. [Binary Search](./DS%20%26%20Algo%20in%20python/binarysearch.md)
 
 ## Arrays
+
 Advantages of array
+
 - Reading and writing is O(1)
 
 Disadvantages of array
+
 - Insertion and deletion is O(n)
 - Arrays are not dynamic
   - If you need to store an extra element, you would have to create a new array and copy all the elements over. O(n)
 
-List Slicing in python 
+List Slicing in python
+
 - [start:stop:step]
 - Reverse a list `list[::-1]`
-
 
 ## LinkedList
 
@@ -77,6 +81,17 @@ Binary search trees are useful, because they allow you to find elements in O(log
 ### Heap
 
 ![alt text](./assets/heap.png "Heap")
+
+#### Implementation
+
+Array implementation
+For an array implementation in heaps, the index starts from 1, not 0. The first index represents a value “root”, which is why it is kept empty.
+
+#### Functions
+
+- Heapify
+  - Heapify is a function that turns an unordered array into a heap.
+- HeapSort
 
 ### Priority Queue
 
@@ -229,10 +244,10 @@ Algorithm:
         2. Add v to the set
 ```
 
-
 # Algorithms
 
 ## Others
+
 ![alt text](./assets/onlinevsstablevsinplace.png "topological sort")
 Stable : Maintains the relative order of elements with the same key.
 Online : Algorithm can operate without seeing the entire list of elements. O(1)
