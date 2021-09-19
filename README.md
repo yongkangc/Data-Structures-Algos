@@ -248,9 +248,79 @@ Algorithm:
 
 # Algorithms
 
+## Sorting
+
+### Bubble Sort
+
+The idea is to compare two elements and swap them if they are in wrong order.
+Optimise by
+
+1. Checking if there are any more swaps to be made. If not, stop.
+2. Every time a swap is made, change the index of the array to the latest index of sorted array.
+
+```python
+def bubble_sort(arr):
+    n = len(arr)
+    for i in range(1, n):
+        for j in range(1, n):
+            first_number = arr[j-1]
+            second_number = arr[j]
+            if first_number > second_number:
+                arr[j] = first_number
+                arr[j-1] = second_number
+    return arr
+
+
+def optimized_bubble_sort(arr):
+    n = len(arr)
+    list_sorted = False
+    while list_sorted is False:
+        list_sorted = True
+        for i in range(1, n):
+            first_number = arr[i-1]
+            second_number = arr[i]
+            if first_number > second_number:
+                arr[i], arr[i-1] = swap(arr[i-1], arr[i])
+                list_sorted = False
+    return arr
+
+
+def v4_bubble_sort(arr):
+    n = len(arr)
+    list_sorted = False
+    while not list_sorted:
+        list_sorted = True
+        new_n = 0
+        for i in range(1, n):
+            first_number = arr[i-1]
+            second_number = arr[i]
+            if first_number > second_number:
+                arr[i], arr[i-1] = swap(arr[i-1], arr[i])
+                list_sorted = False
+                new_n = i  # updating latest sorted index
+        n = new_n  # stop sorting as the next n elements are already sorted
+    return arr
+```
+
+### Selection Sort
+
+The idea is to find the minimum element and swap it with the first element.
+
+### Insertion Sort
+
+The idea is to iterate through the array. For each element, find the position where it belongs (more than left for ascending) and insert it there.
+
+Optimization:
+
+- To optimize the algorithm, instead of swapping the elements, we can just move the elements to the right and keep track of the current index.
+
 ## Others
 
 ![alt text](./assets/onlinevsstablevsinplace.png "topological sort")
 Stable : Maintains the relative order of elements with the same key.
 Online : Algorithm can operate without seeing the entire list of elements. O(1)
 In place : Uses additional space to store the result.
+
+```
+
+```
