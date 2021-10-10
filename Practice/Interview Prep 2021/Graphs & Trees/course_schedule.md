@@ -26,13 +26,13 @@ class Solution:
         if self.visited_node[node] == 1:
             return True
         if self.visited_node[node] == 0:
-            self.visited_node[node] = -1
+            self.visited_node[node] = -1 # mark it as visited in the cycle
             for neighbor in graph[node]:
 
                 if not self.dfs(neighbor,graph):
                     return False
 
-        self.visited_node[node] = 1
+        self.visited_node[node] = 1 # when the whole cycle is complete
         return True
 
 ```
