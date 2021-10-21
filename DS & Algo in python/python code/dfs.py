@@ -1,21 +1,41 @@
 # Using a Python dictionary to act as an adjacency list
 graph = {
-    'A' : ['B','C'],
-    'B' : ['D', 'E'],
-    'C' : ['F'],
-    'D' : [],
-    'E' : ['F'],
-    'F' : []
+    'A': ['B', 'C'],
+    'B': ['D', 'E'],
+    'C': ['F'],
+    'D': [],
+    'E': ['F'],
+    'F': []
 }
 
-visited = set() # Set to keep track of visited nodes.
+visited = set()  # Set to keep track of visited nodes.
+
 
 def dfs(visited, graph, node):
     if node not in visited:
-        print (node)
+        print(node)
         visited.add(node)
         for neighbour in graph[node]:
             dfs(visited, graph, neighbour)
 
+
 # Driver Code
 dfs(visited, graph, 'A')
+
+# A -> B
+# A -> C
+# B -> C
+# B -> D
+# C -> D
+# D -> C
+# E -> F
+# F -> C
+# create another adjacency list
+graph = {
+    'A': ['B', 'C'],
+    'B': ['C', 'D'],
+    'C': ['D'],
+    'D': ['C'],
+    'E': ['F'],
+    'F': ['C']
+}
