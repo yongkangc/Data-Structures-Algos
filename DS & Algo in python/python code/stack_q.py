@@ -1,3 +1,6 @@
+import operator
+
+
 class Stack:
     def __init__(self):
         self.__items = []
@@ -22,7 +25,7 @@ class Stack:
         return len(self.__items)
 
 
-class Queue:
+class QueueList:
 
     def __init__(self):
         self.__items = []
