@@ -246,6 +246,34 @@ Algorithm:
         2. Add v to the set
 ```
 
+## Union Find
+Union find is a data structure that allows us to find the set of elements that are connected to a given element.
+
+Operations:
+- Union(x,y) : Merges the sets of x and y
+- Find(x) : Returns the set of x
+
+Advantages:
+- Useful in graph type problems, disjoint sets
+
+Implmentation:
+1. Create a graph by connecting all the edge with the vertices
+2. Set a representative for each group
+3. Create a tree structure by connecting the representative of the same group
+4. Union operation can set the representative of the two groups to the same group as child
+
+Pseudo Code:
+```
+Initiliaze with parent[i] = i
+function find(x)
+    if parent[x] != x:
+        return find(parent[x])
+    return x
+function union(x,y):
+    parent[find(y)] = find(x)
+
+```
+
 # Algorithms
 
 ## Sorting

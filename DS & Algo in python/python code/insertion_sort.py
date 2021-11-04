@@ -27,14 +27,52 @@ def timing(f):
 def insertion_sort(arr):
     n = len(arr)
     for i in range(1, n):
-        curr = arr[i]
-        j = i - 1
-        while curr < arr[j] and j >= 0:
-            arr[j] = arr[j+1]  # shift right rightwards
-            j -= 1
+        curr = i
+        while arr[curr-1] > arr[curr] and curr > 0:
+            arr[curr], arr[curr-1] = arr[curr-1], arr[curr]
+            curr -= 1
     return arr
 
 
 arr = [randint(0, 100) for p in range(0, 10)]
 insertion_sort(arr) == sorted(arr)
 print(insertion_sort(arr))
+
+
+class Solution:
+    def __init__(self):
+        self.graph = defaultdict(list)
+        self.visited = set()        
+    def countComponents(self, n: int, edges: List[List[int]]) -> int:
+        count = 0
+        visited = set()
+        
+        
+        # populate the graph
+        for edge in edges:
+            node_1,node_2 = edge
+            graph[node_1].append(node_2)
+            graph[node_2].append(node_1)
+        
+        for node in self.graph:
+            if node not in visited:
+                self.dfs(node)
+                count +=1
+        
+        return count
+
+            
+    def dfs(self,node):
+
+        # mark it as visited
+        self.visited.add(node)
+        print(self.visited)
+
+
+        # traverse the neighbors
+        for neighbour in self.graph[node]:
+            if neighbour not in self.visited:
+                self.dfs(node,self.graph,self.visited)
+                
+            
+    
