@@ -245,7 +245,17 @@ Algorithm:
         1. Remove edge uv from graph
         2. Add v to the set
 ```
-
+```
+ "Topological-Sort\n",
+ "Input:\n",
+ "- G: graph\n",
+ "Output:\n",
+ "- list of sorted vertices\n",
+ "Steps:\n",
+ "1. call DFS(G) to compute the finishing time for each vertex in G\n",
+ "2. sort the vertices based on its finishing time from largest to smallest\n",
+ "3. return a list of sorted vertices \n",
+```
 ## Union Find
 Union find is a data structure that allows us to find the set of elements that are connected to a given element.
 
