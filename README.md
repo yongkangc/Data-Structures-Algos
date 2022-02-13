@@ -84,6 +84,11 @@ Binary search trees are useful, because they allow you to find elements in O(log
 
 - for max heap or min heap, the parent is always greater/less than or equal to the children.
 
+#### Properties of heap:
+- depth of heap Theta(log n)
+- depth of node in heap is O(log n)
+![alt text](./assets/height_depth_node.png "Heap")
+
 #### Implementation
 
 Array implementation
